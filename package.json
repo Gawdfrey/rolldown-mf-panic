@@ -2,7 +2,7 @@
   "name": "vite-rolldown",
   "private": true,
   "scripts": {
-    "build": "rolldown --config ./rolldown.config.mjs",
+    "build": "RUST_BACKTRACE=full rolldown --config ./rolldown.config.mjs",
     "dev": "RUST_BACKTRACE=full npm run build && http-server ./dist -p 8085 --cors"
   },
   "devDependencies": {
